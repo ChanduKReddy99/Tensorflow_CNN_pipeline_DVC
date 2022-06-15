@@ -1,0 +1,13 @@
+#local lib
+-e .
+
+
+#libs
+dvc
+tensorflow
+tqdm
+joblib
+black
+pillow
+scipy
+
