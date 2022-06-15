@@ -4,7 +4,6 @@ from tqdm import tqdm
 from src.utils.common_utils import read_yaml,create_dirs,copy_files
 import logging
 
-
 logging.basicConfig(
     filename= os.path.join('logs', 'running_logs.log'),
     level=logging.INFO,
@@ -43,9 +42,9 @@ if __name__=='__main__':
 
     try:
         logging.info('\n********************************')
-        logging.info('>>>Loading configuration to start stage one.<<<<<')
+        logging.info('>>>stage01 get_data started <<<')
         get_data(config_path=parsed_args.config)
-        logging.info('>>>stage one completed and data got saved in local dir from remote dir! <<<\n')
+        logging.info('>>>stage01 completed and data got saved in local dir from remote dir! <<<\n')
 
     except Exception as e:
         logging.error(f'Error: {e}')

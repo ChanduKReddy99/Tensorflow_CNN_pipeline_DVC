@@ -56,7 +56,7 @@ coverage.xml
 *.pot
 
 # Django stuff:
-#*.log
+*.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -134,3 +134,5 @@ dmypy.json
 # add secret keys or API keys here
 config/secrets.yaml
 
+#add data directory here
+data/
