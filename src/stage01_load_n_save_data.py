@@ -1,7 +1,7 @@
 import os
 import argparse
 from tqdm import tqdm
-from src.utils.common_utils import read_yaml,create_dirs,copy_files
+from src.utils.common_utils import read_config_yaml,create_dirs,copy_files
 import logging
 
 logging.basicConfig(
@@ -18,7 +18,7 @@ def get_data(config_path:str) -> None:
     Args:
         config_path: path to the yaml file
     """
-    config = read_yaml(config_path)
+    config = read_config_yaml(config_path)
 
     source_data_dirs= config['source_data_dirs']
     local_data_dirs= config['local_data_dirs']

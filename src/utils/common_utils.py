@@ -5,12 +5,12 @@ from tqdm import tqdm
 import shutil
 
 
-def read_yaml(file_path:str) -> dict:
+def read_config_yaml(file_path:str) -> dict:
     """
     Loads a yaml file and returns a dictionary
 
     Args:
-        file_path: path to the yaml file
+        file_path: path to the  yaml file
 
     Returns:
         A dictionary containing the yaml file's contents
