@@ -10,10 +10,10 @@ stages:
     - data/dog
 
   prepare_base_model:
-    cmd: python src/stage_02_prepare_base_model.py --config=configs/config.yaml --params=params.yaml
+    cmd: python src/stage02_prep_base_model.py --config=configs/config.yaml --params=params.yaml
     deps:
-    - src/stage_02_prepare_base_model.py
-    - src/utils/common.py
+    - src/stage02_prep_base_model.py
+    - src/utils/common_utils.py
     - src/utils/model.py
     - configs/config.yaml
     params:
@@ -21,4 +21,4 @@ stages:
     - LEARNING_RATE
     outs:
     - artifacts/base_model/base_model.h5
-    - artifacts/base_model/updated_base_model.h5
+    - artifacts/base_model/updated_model.h5
