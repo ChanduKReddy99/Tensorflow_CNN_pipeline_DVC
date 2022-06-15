@@ -135,4 +135,4 @@ dmypy.json
 config/secrets.yaml
 
 #add data directory here
-data/
+#data/

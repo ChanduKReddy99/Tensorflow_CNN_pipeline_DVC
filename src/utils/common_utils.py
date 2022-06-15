@@ -52,5 +52,5 @@ def copy_files(source_data_dir:str, local_data_dir:str) -> None:
         if os.path.isfile(source_file_path):
             shutil.copy(source_file_path, dest_file_path)
             
-            logging.info(f'{source_file_path} copied successfully to {dest_file_path}')
+    logging.info(f'{source_file_path} copied successfully to {dest_file_path}')
 

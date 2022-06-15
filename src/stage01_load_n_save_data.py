@@ -7,7 +7,7 @@ import logging
 logging.basicConfig(
     filename= os.path.join('logs', 'running_logs.log'),
     level=logging.INFO,
-    format= '[%(asctime)s: %(levelname)s: %(modules)s]: %(message)s',
+    format= '[%(asctime)s: %(levelname)s: %(module)s]: %(message)s',
     filemode='a'
 )
 
@@ -42,9 +42,9 @@ if __name__=='__main__':
 
     try:
         logging.info('\n********************************')
-        logging.info('>>>stage01 get_data started <<<')
+        logging.info('>>>>>stage01 get_data started <<<<<')
         get_data(config_path=parsed_args.config)
-        logging.info('>>>stage01 completed and data got saved in local dir from remote dir! <<<\n')
+        logging.info('>>>>>stage01 completed and data got saved in local dir from remote dir! <<<<<\n')
 
     except Exception as e:
         logging.error(f'Error: {e}')

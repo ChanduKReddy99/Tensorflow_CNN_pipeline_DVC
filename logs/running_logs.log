@@ -1,0 +1,8 @@
+[2022-06-15 15:04:27,420: INFO: stage01_load_n_save_data]: 
+********************************
+[2022-06-15 15:04:27,420: INFO: stage01_load_n_save_data]: >>>>>stage01 get_data started <<<<<
+[2022-06-15 15:04:27,423: INFO: common_utils]: content from configs/config.yaml read successfully!
+[2022-06-15 15:04:27,625: INFO: common_utils]: ../data_source/cat\9481.jpg copied successfully to data/cat\9481.jpg
+[2022-06-15 15:04:27,872: INFO: common_utils]: ../data_source/dog\9788.jpg copied successfully to data/dog\9788.jpg
+[2022-06-15 15:04:27,874: INFO: stage01_load_n_save_data]: >>>>>stage01 completed and data got saved in local dir from remote dir! <<<<<
+
