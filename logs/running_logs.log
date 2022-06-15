@@ -6,3 +6,33 @@
 [2022-06-15 15:04:27,872: INFO: common_utils]: ../data_source/dog\9788.jpg copied successfully to data/dog\9788.jpg
 [2022-06-15 15:04:27,874: INFO: stage01_load_n_save_data]: >>>>>stage01 completed and data got saved in local dir from remote dir! <<<<<
 
+[2022-06-15 15:18:16,992: INFO: stage01_load_n_save_data]: 
+********************************
+[2022-06-15 15:18:16,992: INFO: stage01_load_n_save_data]: >>>>>stage01 get_data started <<<<<
+[2022-06-15 15:18:16,993: INFO: common_utils]: content from configs/config.yaml read successfully!
+[2022-06-15 15:18:17,019: INFO: common_utils]: data/cat created successfully!
+[2022-06-15 15:18:17,255: INFO: common_utils]: ../data_source/cat\9481.jpg copied successfully to data/cat\9481.jpg
+[2022-06-15 15:18:17,257: INFO: common_utils]: data/dog created successfully!
+[2022-06-15 15:18:17,488: INFO: common_utils]: ../data_source/dog\9788.jpg copied successfully to data/dog\9788.jpg
+[2022-06-15 15:18:17,490: INFO: stage01_load_n_save_data]: >>>>>stage01 completed and data got saved in local dir from remote dir! <<<<<
+
+[2022-06-15 15:19:27,691: INFO: stage01_load_n_save_data]: 
+********************************
+[2022-06-15 15:19:27,691: INFO: stage01_load_n_save_data]: >>>>>stage01 get_data started <<<<<
+[2022-06-15 15:19:27,693: INFO: common_utils]: content from configs/config.yaml read successfully!
+[2022-06-15 15:19:27,715: INFO: common_utils]: data/cat created successfully!
+[2022-06-15 15:19:27,940: INFO: common_utils]: ../data_source/cat\9481.jpg copied successfully to data/cat\9481.jpg
+[2022-06-15 15:19:27,941: INFO: common_utils]: data/dog created successfully!
+[2022-06-15 15:19:28,185: INFO: common_utils]: ../data_source/dog\9788.jpg copied successfully to data/dog\9788.jpg
+[2022-06-15 15:19:28,186: INFO: stage01_load_n_save_data]: >>>>>stage01 completed and data got saved in local dir from remote dir! <<<<<
+
+[2022-06-15 15:20:00,965: INFO: stage01_load_n_save_data]: 
+********************************
+[2022-06-15 15:20:00,966: INFO: stage01_load_n_save_data]: >>>>>stage01 get_data started <<<<<
+[2022-06-15 15:20:00,967: INFO: common_utils]: content from configs/config.yaml read successfully!
+[2022-06-15 15:20:00,989: INFO: common_utils]: data/cat created successfully!
+[2022-06-15 15:20:01,156: INFO: common_utils]: ../data_source/cat\9481.jpg copied successfully to data/cat\9481.jpg
+[2022-06-15 15:20:01,157: INFO: common_utils]: data/dog created successfully!
+[2022-06-15 15:20:01,388: INFO: common_utils]: ../data_source/dog\9788.jpg copied successfully to data/dog\9788.jpg
+[2022-06-15 15:20:01,390: INFO: stage01_load_n_save_data]: >>>>>stage01 completed and data got saved in local dir from remote dir! <<<<<
+
