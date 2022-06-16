@@ -39,18 +39,18 @@ Args:
 
     logging.info(f'checkpoint call back is saved at {checkpoint_callback_filepath} as binary file')
 
-# def get_callbacks(callbacks_dir_path:str) -> list:
-#     """load and save call backs from callbacks dir
-# Args:
-#     callbacks_dir(str): path to the callbacks dir
-# Returns:
-#     list: list of callbacks for training
-#     """
-#     tb_callback_filepath = [os.path.join(callbacks_dir_path, pickle_file) for pickle_file in os.listdir(callbacks_dir_path) if pickle_file.endswith('.db')]  
-#     callbacks = [
-#         joblib.load(path) for path in tb_callback_filepath
-#     ]
+def get_callbacks(callbacks_dir_path:str) -> list:
+    """load and save call backs from callbacks dir
+Args:
+    callbacks_dir(str): path to the callbacks dir
+Returns:
+    list: list of callbacks for training
+    """
+    tb_callback_filepath = [os.path.join(callbacks_dir_path, pickle_file) for pickle_file in os.listdir(callbacks_dir_path) if pickle_file.endswith('.db')]  
+    callbacks = [
+        joblib.load(path) for path in tb_callback_filepath
+    ]
 
-#     logging.info(f'saved callbacks are loaded and now they are ready to be used')
-#     return callbacks
+    logging.info(f'saved callbacks are loaded and now they are ready to be used')
+    return callbacks
     

@@ -1,6 +1,6 @@
 import os
-import argparse
 import time
+import argparse
 import logging
 from src.utils.common_utils import read_config_yaml,create_dirs
 from src.utils.callbacks import create_and_save_tensorboard_callbacks, create_and_save_checkpointing_callbacks
