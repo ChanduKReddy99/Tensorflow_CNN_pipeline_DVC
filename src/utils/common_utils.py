@@ -54,3 +54,15 @@ def copy_files(source_data_dir:str, local_data_dir:str) -> None:
             
     logging.info(f'{source_file_path} copied successfully to {dest_file_path}')
 
+def get_timestamp(name:str) -> str:
+    """creates a unique name with timestamp
+    Args:
+        name(str): name of the file or directory
+
+    Returns:
+        str: A string containing the unique name with timestamp
+    """
+    timestamp = time.asctime().replace(' ', '_').replace(':', '-')
+    unique_name = f'{name}_{timestamp}'
+    return unique_name
+
