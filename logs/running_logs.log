@@ -1095,3 +1095,158 @@ _________________________________________________________________
 [2022-06-16 09:52:41,027: INFO: callbacks]: checkpoint call back is saved at artifacts\callbacks\checkpoint_cb.cb as binary file
 [2022-06-16 09:52:41,027: INFO: stage03_prepare_callback]: >>>>>stage03 completed and callbacks are prepared and saved as binary! <<<<<
 
+[2022-06-16 09:54:19,080: INFO: stage03_prepare_callback]: 
+********************************
+[2022-06-16 09:54:19,080: INFO: stage03_prepare_callback]: >>>>>stage03 started <<<<<
+[2022-06-16 09:54:19,082: INFO: common_utils]: content from configs/config.yaml read successfully!
+[2022-06-16 09:54:19,084: INFO: callbacks]: tensorboard call back is saved at artifacts\callbacks\tensorboard_cb.cb as binary file
+[2022-06-16 09:54:19,088: INFO: callbacks]: checkpoint call back is saved at artifacts\callbacks\checkpoint_cb.cb as binary file
+[2022-06-16 09:54:19,089: INFO: stage03_prepare_callback]: >>>>>stage03 completed and callbacks are prepared and saved as binary! <<<<<
+
+[2022-06-16 09:54:52,559: INFO: stage02_prep_base_model]:  
+*********************
+[2022-06-16 09:54:52,559: INFO: stage02_prep_base_model]:  >>>>> stage02 started (preparing base_model) <<<<<
+[2022-06-16 09:54:52,560: INFO: common_utils]:  content from configs/config.yaml read successfully!
+[2022-06-16 09:54:52,561: INFO: common_utils]:  content from params.yaml read successfully!
+[2022-06-16 09:54:52,930: INFO: model]:  base model summary:
+Model: "vgg16"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+=================================================================
+Total params: 14,714,688
+Trainable params: 14,714,688
+Non-trainable params: 0
+_________________________________________________________________
+
+[2022-06-16 09:54:52,930: WARNING: saving_utils]:  Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[2022-06-16 09:54:53,028: INFO: model]:  VGG16 base model saved successfully to artifacts\base_model\base_model.h5
+[2022-06-16 09:54:53,043: INFO: model]:  custom model is compiled and ready to be trained
+[2022-06-16 09:54:53,044: INFO: model]:  full model summary:
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 224, 224, 3)]     0         
+                                                                 
+ block1_conv1 (Conv2D)       (None, 224, 224, 64)      1792      
+                                                                 
+ block1_conv2 (Conv2D)       (None, 224, 224, 64)      36928     
+                                                                 
+ block1_pool (MaxPooling2D)  (None, 112, 112, 64)      0         
+                                                                 
+ block2_conv1 (Conv2D)       (None, 112, 112, 128)     73856     
+                                                                 
+ block2_conv2 (Conv2D)       (None, 112, 112, 128)     147584    
+                                                                 
+ block2_pool (MaxPooling2D)  (None, 56, 56, 128)       0         
+                                                                 
+ block3_conv1 (Conv2D)       (None, 56, 56, 256)       295168    
+                                                                 
+ block3_conv2 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_conv3 (Conv2D)       (None, 56, 56, 256)       590080    
+                                                                 
+ block3_pool (MaxPooling2D)  (None, 28, 28, 256)       0         
+                                                                 
+ block4_conv1 (Conv2D)       (None, 28, 28, 512)       1180160   
+                                                                 
+ block4_conv2 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_conv3 (Conv2D)       (None, 28, 28, 512)       2359808   
+                                                                 
+ block4_pool (MaxPooling2D)  (None, 14, 14, 512)       0         
+                                                                 
+ block5_conv1 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv2 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_conv3 (Conv2D)       (None, 14, 14, 512)       2359808   
+                                                                 
+ block5_pool (MaxPooling2D)  (None, 7, 7, 512)         0         
+                                                                 
+ flatten (Flatten)           (None, 25088)             0         
+                                                                 
+ dense (Dense)               (None, 2)                 50178     
+                                                                 
+=================================================================
+Total params: 14,764,866
+Trainable params: 50,178
+Non-trainable params: 14,714,688
+_________________________________________________________________
+
+[2022-06-16 09:54:53,097: INFO: stage02_prep_base_model]:  full untrained model saved successfully to artifacts\base_model\updated_model.h5
+[2022-06-16 09:54:53,097: INFO: stage02_prep_base_model]:  >>>>> stage02 finished (base_model is created and saved successfully!) <<<<<
+
+[2022-06-16 09:54:54,301: INFO: stage01_load_n_save_data]: 
+********************************
+[2022-06-16 09:54:54,301: INFO: stage01_load_n_save_data]: >>>>>stage01 get_data started <<<<<
+[2022-06-16 09:54:54,305: INFO: common_utils]: content from configs/config.yaml read successfully!
+[2022-06-16 09:54:54,335: INFO: common_utils]: data/cat created successfully!
+[2022-06-16 09:54:54,514: INFO: common_utils]: ../data_source/cat\9481.jpg copied successfully to data/cat\9481.jpg
+[2022-06-16 09:54:54,515: INFO: common_utils]: data/dog created successfully!
+[2022-06-16 09:54:54,744: INFO: common_utils]: ../data_source/dog\9788.jpg copied successfully to data/dog\9788.jpg
+[2022-06-16 09:54:54,746: INFO: stage01_load_n_save_data]: >>>>>stage01 completed and data got saved in local dir from remote dir! <<<<<
+
+[2022-06-16 09:55:01,816: INFO: stage03_prepare_callback]: 
+********************************
+[2022-06-16 09:55:01,816: INFO: stage03_prepare_callback]: >>>>>stage03 started <<<<<
+[2022-06-16 09:55:01,817: INFO: common_utils]: content from configs/config.yaml read successfully!
+[2022-06-16 09:55:01,819: INFO: callbacks]: tensorboard call back is saved at artifacts\callbacks\tensorboard_cb.cb as binary file
+[2022-06-16 09:55:01,823: INFO: callbacks]: checkpoint call back is saved at artifacts\callbacks\checkpoint_cb.cb as binary file
+[2022-06-16 09:55:01,823: INFO: stage03_prepare_callback]: >>>>>stage03 completed and callbacks are prepared and saved as binary! <<<<<
+
+[2022-06-16 09:55:42,221: INFO: stage03_prepare_callback]: 
+********************************
+[2022-06-16 09:55:42,222: INFO: stage03_prepare_callback]: >>>>>stage03 started <<<<<
+[2022-06-16 09:55:42,223: INFO: common_utils]: content from configs/config.yaml read successfully!
+[2022-06-16 09:55:42,225: INFO: callbacks]: tensorboard call back is saved at artifacts\callbacks\tensorboard_cb.cb as binary file
+[2022-06-16 09:55:42,229: INFO: callbacks]: checkpoint call back is saved at artifacts\callbacks\checkpoint_cb.cb as binary file
+[2022-06-16 09:55:42,229: INFO: stage03_prepare_callback]: >>>>>stage03 completed and callbacks are prepared and saved as binary! <<<<<
+
+[2022-06-16 09:56:19,124: INFO: stage03_prepare_callback]: 
+********************************
+[2022-06-16 09:56:19,124: INFO: stage03_prepare_callback]: >>>>>stage03 started <<<<<
+[2022-06-16 09:56:19,126: INFO: common_utils]: content from configs/config.yaml read successfully!
+[2022-06-16 09:56:19,127: INFO: callbacks]: tensorboard call back is saved at artifacts\callbacks\tensorboard_cb.cb as binary file
+[2022-06-16 09:56:19,131: INFO: callbacks]: checkpoint call back is saved at artifacts\callbacks\checkpoint_cb.cb as binary file
+[2022-06-16 09:56:19,131: INFO: stage03_prepare_callback]: >>>>>stage03 completed and callbacks are prepared and saved as binary! <<<<<
+
